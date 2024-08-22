@@ -1,24 +1,24 @@
-# README
+## Установка
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Чтобы настроить проект на вашем локальном компьютере, выполните следующие шаги:
 
-Things you may want to cover:
+1. Склонируйте репозиторий:
+   `git clone git@github.com:Qj7/ror_cart.git`
+   `cd ror_cart`
 
-* Ruby version
+2. Установите зависимости:
+   `bundle install`
 
-* System dependencies
+3. Создайте базу данных:
+   `rails db:create`
 
-* Configuration
+4. Примените миграции:
+   `rails db:migrate`
 
-* Database creation
+5. Заполните базу данных начальными данными:
+   `rails db:seed`
 
-* Database initialization
+## Запуск проекта
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Чтобы запустить проект в режиме разработки, используйте команду:
+`bin/dev`
