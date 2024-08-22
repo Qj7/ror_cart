@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShopCart</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+  </head>
+
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid mx-5">
+        <a class="navbar-brand" href="#">
+          <%= image_tag 'logo.png', alt: 'Logo', width: '150', height: '36' %>
+        </a>
+      </div>
+    </nav>
+
+    <div class="container mt-4 mx-5">
+      <% flash.each do |type, message| %>
+        <div class="alert alert-<%= bootstrap_class_for(type) %> alert-dismissible fade show" role="alert">
+          <%= message %>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="container mx-5">
+      <%= yield %>
+    </div>
+  </body>
+</html>

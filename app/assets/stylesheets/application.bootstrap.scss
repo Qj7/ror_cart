@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+@import 'components/slider';
+
+body {
+  color: #1E1E3C;
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+  background-color: #ECEFF4;
+  height: 1px;
+  border: 0;
+}
+
+.border-bottom {
+  border-bottom: #ECEFF4;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+}
+
+.product-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.product-price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px
+}
+
+.quantity-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #515767;
+}
+
+.custom-button {
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  padding: 10px 16px 10px 16px;
+  background: #4AD9BD;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.clean-cart-button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.summary {
+  border: 1px solid #ECEFF4;
+}
+
+.text-grey {
+  color: #8A93A3 !important;
+}
+
+.text-green {
+  color: #4AD9BD;
+}
+
+.product-quantity .input-group {
+  display: flex;
+  max-width: 120px;
+  background-color: #F8F8F9;
+}
+
+.product-quantity .btn,
+.product-quantity .form-control {
+  border: none;
+  background-color: #F8F8F9;
+  color: #1E1E3C;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product-quantity .form-control {
+  max-width: 50px;
+  text-align: center;
+  border-radius: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.product-quantity .btn {
+  width: 34px;
+  height: 34px;
+}
+
+.product-quantity .btn i {
+  font-size: 1.2rem;
+  color: #1E1E3C;
+}
+
+.product-quantity .input-group-prepend,
+.product-quantity .input-group-append {
+  margin: 0;
+}
